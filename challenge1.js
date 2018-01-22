@@ -9,20 +9,31 @@ John and a friend invented a simple game where the player with the highest value
 
 */ 
 
-var johnHeight = 170.18 
-var rowanHeight = 170.18 
-var johnAge = 24 
-var rowanAge = 24
+var johnHeight = 172; 
+var rowanHeight = 165; 
+var johnAge = 26; 
+var rowanAge = 29;
+var friendHeight;
+var friendAge; 
 
+friendHeight = prompt("What is your height?");
+friendAge = prompt("What is your age?");
 
-var johnScore = johnHeight + 5 * johnAge
-var rowanScore = rowanHeight + 5 * rowanAge
+var johnScore = johnHeight + 5 * johnAge;
+// console.log(johnScore);
+var rowanScore = rowanHeight + 5 * rowanAge;
+// console.log(rowanScore);
+var friendScore = friendHeight + 5 * friendAge; 
+// console.log(friendScore);
+ 
 
-
-if (johnScore > rowanScore) {
+if (johnScore > rowanScore && johnScore > friendScore) {
 	console.log(`John Wins! His score was ${johnScore}`);
-} else if (rowanScore === johnScore) {
-	console.log(`It's a tie with a score of ${johnScore}`);
-} else {
+} else if (friendScore > johnScore && friendScore > rowanScore) {
+	console.log(`The third player wins! His score was ${friendScore}`);
+} else if (rowanScore > johnScore && rowanScore > friendScore) {
 	console.log(`Rowan Wins! His score was ${rowanScore}`);
+} else {
+	console.log("It's a draw");
 }
+
