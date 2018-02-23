@@ -1,0 +1,33 @@
+html {
+	background: url(leaves.jpg);
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: Luminari;
+  background-image: fixed;
+}
+
+h1{
+	text-align: center;
+}
+
+div	{
+	margin-top: 200px; 
+	text-align: center;
+}
+div .result {
+	background: radial-gradient(white, #8FBC8F, #556B2F);
+	width: 135px;
+	margin-left: 265px;
+	margin-top: -10px;
+	border-radius: 5px;
+}
+
+input[type="submit"] {
+	margin-top: 10px;
+	display: block;
+	margin-left: 46%;
+}
+
